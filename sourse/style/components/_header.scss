@@ -1,0 +1,173 @@
+.header {
+  width: 94.8%;
+  background: #fff;
+}
+
+.user {
+  display: flex;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 78px;
+    border-right: 1px solid #F1F1F1;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+
+  &__search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #F1F1F1;
+  }
+
+  &__kendall {
+    display: flex;
+    align-items: center;
+  }
+
+  &__photo {
+    width: 71px;
+    height: 77px;
+    margin-right: 18px;
+  }
+
+  &__name {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 9px;
+    margin-right: 49px;
+    color: transparent;    
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, #FD5272, #EA6D54);
+  }
+
+  &__text {
+    font-size: 10px;
+    font-weight: 400;
+    color: #bfbfbf
+  }
+}
+
+.searc--line {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 299px;
+  height: 34px;
+  background: #F8F8F8;
+  border-radius: 30px;
+  border: 1px solid #f1f1f1;
+}
+
+.line {
+  background: transparent;
+  margin-left: 13px;
+  border: 0px;
+  width: 100%;
+  height: 13px;
+  font-size: 12px;
+}
+
+.search__link {
+  width: 16px;
+  height: 16px;
+  margin-right: 13px;
+}
+
+.rounded_rectangle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 18px;
+  border-radius: 20px;
+  background: linear-gradient(0deg, #FD5272, #EA6D54);
+}
+
+.circle{
+  width: 6px;
+  height: 6px;
+  border-radius:50%;
+  background: #fff;
+  margin-left: 1px;
+}
+
+.color {
+  background: #bfbfbf;
+  margin: 1px 18px 1px 0;
+}
+
+.folder {
+  width: 20px;
+  height: 18px;
+}
+
+.settings {
+  width: 21px;
+  height: 17px;
+}
+
+.upload {
+  width: 20px;
+  height: 18px;
+}
+
+.planet {
+  width: 20px;
+  height: 20px;
+}
+
+.envelope {
+  width: 20px;
+  height: 12px;
+}
+
+.stactics{
+  border-top: 1px solid #F1F1F1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  &__block {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  &__title {
+    font-size: 12px;
+    font-weight: 700;
+    color: #777777;
+    margin-bottom: 9px;
+  }
+
+  &__daily {
+    tab-size: 20px;
+    font-weight: 700;
+    color: transparent;    
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, #FD5272, #EA6D54);
+    margin-bottom: 8px;
+  }
+
+  &__course {
+    display: flex;
+  }
+
+  &__link{
+    font-size: 12px;
+    font-weight: 700;
+    color: transparent;    
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, #FD5272, #EA6D54);
+  }
+}

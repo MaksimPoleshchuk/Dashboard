@@ -1,0 +1,65 @@
+.nav {
+  position: relative;
+  top: 0;
+  left:0;
+  z-index: 15;
+  height: 100%;
+  width: 5.2%;
+  background: linear-gradient(0deg, #FD5272, #EA6D54);
+
+  &__menu {
+    width: 100%;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 10px;
+    color: #fff;
+  }
+
+  &__menu-item,
+  &__item {
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    background: #ffffff;
+    box-shadow: 0 3px 20px rgba(0,0,0,.25), 0 2px 0 rgba(255,255,255,.4);
+  }
+
+  &__logo {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Yellowtail', cursive;
+    font-weight: lighter;
+    color: transparent;    
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, #FD5272, #EA6D54);
+    box-shadow: 2px #b3b0b1;
+  }
+
+  &__link:hover {
+    width: 100%;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 10px;
+    color: #fff;
+    background: #C33D5A;
+  }
+
+  &__home,
+  &__stactics,
+  &__user,
+  &__settings,
+  &__quires,
+  &__power {
+    width: 20px;
+    height: 18px;
+    margin-bottom: 10px;
+  }
+}
