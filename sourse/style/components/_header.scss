@@ -17,7 +17,6 @@
   }
 
   &__search {
-    // width: 100%ж
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +26,9 @@
   &__kendall {
     display: flex;
     align-items: center;
+    flex-grow: 1;
   }
+  //----не работает grow, почему? имя не влазит и переносит на вторую строку//
 
   &__photo {
     width: 71px;
@@ -76,6 +77,7 @@
   font-weight: bold;
   color: #C8C8C8;
 }
+// <!--не работает font, почему?-->//
 
 .search__link {
   width: 16px;
