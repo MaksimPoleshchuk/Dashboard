@@ -1,47 +1,56 @@
 .footer {
-  width: 273px;
-  padding: 29px 40px 33px 40px;
-  background: #fff;
-  text-align: center;
 
-  &__link {
-    display: flex;
-    justify-content: space-between;
-    align-items: space-between;
-    flex-wrap: wrap;
-    margin-top: 29px;
-  }
+  @include flex-direction(space-around, center, column, wrap);
+    height: 229px;
 
-  &__logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 55px;
-    height: 55px;
-    border-radius: 20px;
-  }
+    &__title {
+        @include primary-title;
+    }
 
-  &__rdio {
+    &__list {
+        @include flex-direction(center, center , row, wrap);
+    }
+
+    &__item {
+        height: 55px;
+        width: 55px;
+        margin: 6.5px;
+        background-color: cornflowerblue;
+        border-radius: 15px;
+    }
+
+    &__link {
+        @include flex-direction(center,center, row, nowrap);
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+
+        &:hover {
+            background-color: cadetblue;
+        }
+    }
+
+  &__logo--rdio {
     background: linear-gradient(0deg, #6A5BB4,#C28BE5);
   }
 
-  &__css {
+  &__logo--css {
     background: linear-gradient(0deg, #4DBDC4, #6FEACC);
   }
 
-  &__deviantart {
+  &__logo--deviantart {
     background: linear-gradient(0deg, #B3717A, #F7CCAE);
   }
 
-  &__xing {
+  &__logo--xing {
     background: linear-gradient(0deg, #8B4EB5, #7E92E5);
   }
 
-  &__vimeo {
+  &__logo--vimeo {
     background: linear-gradient(0deg, #578DE7, #40CFE0);
   }
 
-  &__vk {
+  &__logo--vk {
     background: linear-gradient(0deg, #F59083, #FBD78C);
   }
 }

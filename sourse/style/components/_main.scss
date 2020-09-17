@@ -1,8 +1,8 @@
 .main {
-  width: 100%;
-  max-width: 985px;
-  height: 795px;
-  margin: 18px;
+  flex: auto;
+  min-width: 320px;
+  max-width: 939px;
+  height: 841px;
 
   &__title {
     color: #777777;
@@ -11,18 +11,17 @@
   }
 }
 
+/* Schedule
+=========================================*/
+
 .section {
   display: flex;
   justify-content: space-between;
 }
 
-/* Schedule
-=========================================*/
-
 .schedule {
   margin-bottom: 18px;
   width: 100%;
-  padding: 30px;
   margin-right: 18px;
   background: #fff;
 
@@ -33,19 +32,88 @@
 
   &__button {
     display: flex;
+    align-items: center;
     margin-bottom: 31px;
+  }
+
+  &__link {
+    padding: 7px 17px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #BFBFBF;
+  }
+
+  &__link--year {
+    margin-right: 10px;
+  }
+
+  &__link--circle {
+    position: relative;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #BFBFBF;
+  }
+
+  &__link--circle:after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #BFBFBF;
+    
+  }
+
+  &__link--circle:before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #BFBFBF;
+  }
+
+  &__link:hover {
+    padding: 7px 17px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 30px;
+    background: linear-gradient(50deg, #FD5272, #EA6D54);
   }
 
   &__content {
     display: flex;
   }
 
-  &__month {
+  &__sum {
+    font-size: 12px;
+    font-weight: 700;
+    color: #BFBFBF;
+    margin-bottom: 20px;
+    margin-right: 31px;
+  }
+
+  &__months {
     display: flex;
     justify-content: space-around;
   }
-}
 
+  &__month {
+    font-size: 12px;
+    font-weight: 700;
+    color: #BFBFBF;
+  }
+
+  &__shape {
+    width: 582px;
+    height: 117px;
+    margin-bottom: 26px;
+  }
+}
 
 /* Revenue
 =========================================*/
@@ -100,9 +168,54 @@
 
 .customers {
   width: 467px;
-  padding-top: 31px;
-  padding-bottom: 35px;
+  padding: 31px 30px 35px 30px;
   background: #fff;
+
+  &__comments {
+    overflow: scroll;
+    width: 407px;
+    height: 393px;
+    margin-top: 39px;
+  }
+
+  &__user {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__avatar {
+    width: 43px;
+    height: 43px;
+    margin-bottom: 13px;
+    margin-right: 20px;
+  }
+
+  &__time {
+    font-size: 8px;
+    font-weight: normal;
+    color: #979796;
+  }
+
+  &__text {
+    padding: 21px 24px 18px 23px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #BFBFBF;
+    background: #FCFCFC;
+    border: 1px solid #F1F1F1;
+    margin-bottom: 19px;
+  }
+
+  &__name {
+    font-size: 12px;
+    font-weight: 0900;
+    color: #777777;
+  }
+
+  &__messages {
+    border-left: 4px solid #F1F1F1;
+    padding-left: 13px;
+  }
 }
 
 /* Task
@@ -111,9 +224,85 @@
 .task {
   margin-bottom: 18px;
   width: 501px;
-  padding-top: 32px;
-  padding-bottom: 24px;
+  padding: 32px 27px 23px 27px;
   background: #fff;
+
+  &__list {
+    overflow: scroll;
+    width: 441px;
+    height: 158px;
+    margin-top: 20px;
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+  }
+
+  &__position {
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #EDEDED;
+    border-bottom: 1px solid #EDEDED;
+  }
+
+  &__state {
+    display: none;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__fake {
+    width: 17px;
+    height: 17px;
+    border: 1px solid #E1E1E1;
+    border-radius: 50%;
+    margin-right: 11px;
+    position: relative;
+  }
+
+  &__fake::before {
+    content: '\2714';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    margin-right: 11px;
+    background: linear-gradient(50deg, #FD5272, #EA6D54);
+    opacity: 0;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__state:checked + &__fake::before {
+    opacity: 1;
+  }
+
+  &__title {
+    color: #FD566F;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 30px;
+  }
+
+  &__text {
+    color: #BFBFBF;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  &__time {
+    color: #9C9C9C;
+    font-size: 12px;
+    font-weight: 700;
+  }
 }
 
 /* Progress
@@ -156,8 +345,26 @@
 =========================================*/
 
 .shipments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 241px;
   padding-top: 31px;
   padding-bottom: 24px;
   background: #fff;
+
+  &__course {
+    display: flex;
+  }
+
+  &__text {
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 44px;
+    color: transparent;    
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, #FD5272, #EA6D54);
+    margin-bottom: 8px;
+  }
 }

@@ -1,38 +1,88 @@
 .header {
-  width: 94.8%;
+  width: 100%;
+  min-width: 320px;
+  height: 169px;
   background: #fff;
 }
+
+/* User
+==================================================*/
 
 .user {
   display: flex;
 
-  &__link {
+  &__background {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 78px;
+    width: 33px;
+    height: 18px;
+    background: linear-gradient(75deg, #FD5272, #EA6D54);
+    border-radius: 20px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70px;
     border-right: 1px solid #F1F1F1;
-    padding-left: 19px;
-    padding-right: 19px;
+  }
+
+  &__circle {
+    width: 6px;
+    height: 6px;
+    margin: 1px;
+    border-radius: 50%;
+    background: #fff;
   }
 
   &__search {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-right: 1px solid #F1F1F1;
+  }
+
+  &__search--line {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 299px;
+    height: 34px;
+    background: #F8F8F8;
+    border-radius: 30px;
+    border: 1px solid #f1f1f1;
+  }
+
+  &__search--text {
+    background: transparent;
+    margin-left: 13px;
+    border: 0px;
+    width: 100%;
+    height: 13px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #888888;
+  }
+  
+  &__search--zoom {
+    width: 16px;
+    height: 16px;
+    margin-right: 13px;
   }
 
   &__kendall {
     display: flex;
     align-items: center;
-    flex-grow: 1;
+    width: 246px;
   }
-  //----не работает grow, почему? имя не влазит и переносит на вторую строку//
 
   &__photo {
-    width: 71px;
-    height: 77px;
+    width: 70px;
+    height: 70px;
     margin-right: 18px;
   }
 
@@ -52,88 +102,20 @@
     font-weight: 400;
     color: #bfbfbf
   }
+
+  &__button--circle {
+    width: 6px;
+    height: 6px;
+    border-radius:50%;
+    background: #bfbfbf;
+    margin: 1px 18px 1px 0;
+  }
 }
 
-.searc--line {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 299px;
-  height: 34px;
-  background: #F8F8F8;
-  border-radius: 30px;
-  border: 1px solid #f1f1f1;
-}
+/* Stactics
+==================================================*/
 
-.line {
-  @include font-lato;
-  font-weight: bold;
-  background: transparent;
-  margin-left: 13px;
-  border: 0px;
-  width: 100%;
-  height: 13px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #C8C8C8;
-}
-// <!--не работает font, почему?-->//
-
-.search__link {
-  width: 16px;
-  height: 16px;
-  margin-right: 13px;
-}
-
-.rounded_rectangle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 33px;
-  height: 18px;
-  border-radius: 20px;
-  background: linear-gradient(0deg, #FD5272, #EA6D54);
-}
-
-.circle{
-  width: 6px;
-  height: 6px;
-  border-radius:50%;
-  background: #fff;
-  margin-left: 1px;
-}
-
-.color {
-  background: #bfbfbf;
-  margin: 1px 18px 1px 0;
-}
-
-.folder {
-  width: 20px;
-  height: 18px;
-}
-
-.settings {
-  width: 21px;
-  height: 17px;
-}
-
-.upload {
-  width: 20px;
-  height: 18px;
-}
-
-.planet {
-  width: 20px;
-  height: 20px;
-}
-
-.envelope {
-  width: 20px;
-  height: 12px;
-}
-
-.stactics{
+.stactics {
   border-top: 1px solid #F1F1F1;
   display: flex;
   justify-content: space-around;
