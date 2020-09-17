@@ -1,34 +1,32 @@
 .footer {
+  width: 273px;
+  padding: 21px 20px 25px 20px;
+  background: #fff;
+  text-align: center;
 
-  @include flex-direction(space-around, center, column, wrap);
-    height: 229px;
+  &__title {
+    font-size: 14px;
+    font-weight: 900;
+    color: #777777;
+  }
 
-    &__title {
-        @include primary-title;
-    }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-wrap: wrap;
+    margin-top: 21px;
+  }
 
-    &__list {
-        @include flex-direction(center, center , row, wrap);
-    }
-
-    &__item {
-        height: 55px;
-        width: 55px;
-        margin: 6.5px;
-        background-color: cornflowerblue;
-        border-radius: 15px;
-    }
-
-    &__link {
-        @include flex-direction(center,center, row, nowrap);
-        height: 100%;
-        width: 100%;
-        border-radius: 15px;
-
-        &:hover {
-            background-color: cadetblue;
-        }
-    }
+  &__logo {
+    margin: 8px 7px 8px 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 20px;
+  }
 
   &__logo--rdio {
     background: linear-gradient(0deg, #6A5BB4,#C28BE5);

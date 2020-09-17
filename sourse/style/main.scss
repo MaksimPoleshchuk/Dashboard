@@ -8,7 +8,7 @@
 @import './components/aside';
 @import './components/footer';
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ a {
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
@@ -37,18 +37,42 @@ ul{
   font-family: 'Lato', sans-serif;
 }
 
-.inner {
+.main__div {
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  width: 94.8%;
 }
+/* 1020 1020
+==================================================*/
 
 .course {
+  position: relative;
   font-size: 12px;
   font-weight: 700;
   margin: 0 7px;
   color: #bfbfbf;
+}
+
+.up:after{
+  content: '';
+  position: absolute;
+  left: -10px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 6px solid #A889E9;
+  margin: 2px;
+}
+
+.down:after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 6px solid #FD5670;
+  margin: 2px;
+}
+.containe{
+  width: 704px;
+  padding: 30px;
 }
 
 @import './config/media';

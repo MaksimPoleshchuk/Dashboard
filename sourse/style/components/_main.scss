@@ -1,8 +1,7 @@
 .main {
-  flex: auto;
-  min-width: 320px;
-  max-width: 939px;
-  height: 841px;
+  width: 100%;
+  max-width: 985px;
+  margin: 18px;
 
   &__title {
     color: #777777;
@@ -10,6 +9,8 @@
     font-size: 14px;
   }
 }
+
+
 
 /* Schedule
 =========================================*/

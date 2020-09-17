@@ -1,7 +1,5 @@
 .header {
-  width: 100%;
-  min-width: 320px;
-  height: 169px;
+  width: calc(100vw - 70px);
   background: #fff;
 }
 

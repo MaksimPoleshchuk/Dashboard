@@ -8,10 +8,6 @@
   height: 100%;
   background: linear-gradient(0deg, #df3554, #EA6D54);
 
-  @include md {
-    display: none;
-  }
-
   &__link {
     position: relative;
     display: flex;
