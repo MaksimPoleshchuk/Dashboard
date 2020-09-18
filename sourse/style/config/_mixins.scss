@@ -1,0 +1,22 @@
+// Medium devices
+@mixin md {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+}
+
+@mixin flex-direction($axis-x, $axis-y, $direction, $wrap) {
+    display: flex;
+    justify-content: $axis-x;
+    align-items: $axis-y;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+// Typography
+// ---------------*
+@mixin primary-title {
+    font-size: $primary-title-fz;
+    color: $primary-title-color;
+    font-weight: $primary-title-wieght;
+}
