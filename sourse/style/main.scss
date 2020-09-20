@@ -24,16 +24,17 @@ ul {
 
 .wrap {
   position: relative;
-  z-index: 5;
+  // z-index: 5;
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: flex-end;
   align-items: flex-start;
   max-width: 1366px;
-  width: 100%;
+  // width: 100%;
   background-color: #EAEAEA;
   margin: 0 auto;
-  padding-bottom: 0px;
+  overflow: hidden;
+  min-height: 100vh;
   font-family: 'Lato', sans-serif;
 }
 
