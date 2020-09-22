@@ -1,9 +1,4 @@
-// Medium devices
-@mixin md {
-    @media (max-width: #{$screen-md-max}) {
-        @content;
-    }
-}
+
 
 @mixin flex-direction($axis-x, $axis-y, $direction, $wrap) {
     display: flex;
