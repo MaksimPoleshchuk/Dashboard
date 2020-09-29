@@ -1,1 +1,1 @@
-https://maksimpoleshchuk.github.io/dashboard/
+https://maksimpoleshchuk.github.io/Dashboard/
