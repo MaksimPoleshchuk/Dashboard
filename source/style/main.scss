@@ -23,26 +23,22 @@ ul {
 }
 
 .wrap {
-  position: relative;
-  // z-index: 5;
-  display: flex;
-  // flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: flex-start;
   max-width: 1366px;
-  // width: 100%;
+  min-height: 100vh;
   background-color: #EAEAEA;
   margin: 0 auto;
   overflow: hidden;
-  min-height: 100vh;
   font-family: 'Lato', sans-serif;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .main__div {
   display: flex;
 }
-/* 1020 1020
-==================================================*/
+/*==================================================*/
 
 .course {
   position: relative;

@@ -360,7 +360,7 @@ textarea {
 }
 
 .header {
-  width: 100%;
+  width: calc(100% - 70px);
   background: #fff;
 }
 
@@ -558,8 +558,7 @@ textarea {
 }
 
 .nav {
-  position: fixed;
-  top: 0;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -567,9 +566,12 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  top: 0;
+  left: 0;
   width: 70px;
-  height: 100vh;
-  background-color: #fc6863;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FD5272), to(#EA6D54));
+  background: linear-gradient(0deg, #FD5272, #EA6D54);
 }
 
 .nav__link {
@@ -592,15 +594,21 @@ textarea {
 }
 
 .nav__link:first-child {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "Long Cang", cursive;
-  font-size: 40px;
-  color: #fc6863;
   background-color: #fff;
-  -webkit-box-shadow: 5px -1px 5px  #888;
-          box-shadow: 5px -1px 5px  #888;
+  -webkit-box-shadow: 0 -1px 10px 2px #b2c0ba;
+          box-shadow: 0 -1px 10px 2px #b2c0ba;
+}
+
+.nav__w {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Yellowtail', cursive;
+  font-weight: 300;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#FD5272), to(#EA6D54));
+  background-image: linear-gradient(to right, #FD5272, #EA6D54);
 }
 
 .nav__link:last-child {
@@ -629,11 +637,11 @@ textarea {
 }
 
 .nav__link:first-child:hover {
-  background-color: wheat;
+  background-color: #f5deb3;
 }
 
 .nav__link:hover {
-  background-color: #f16863;
+  background-color: #ff7772;
 }
 
 .nav__link:hover:nth-child(1n + 2):after {
@@ -645,7 +653,7 @@ textarea {
   height: 0;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 8px solid #fc6863;
+  border-left: 8px solid #ff7772;
 }
 
 .main {
@@ -883,7 +891,7 @@ textarea {
 .customers__text {
   padding: 21px 24px 18px 23px;
   font-size: 12px;
-  font-weight: lighter;
+  font-weight: 300;
   color: #BFBFBF;
   background: #FCFCFC;
   border: 1px solid #F1F1F1;
@@ -982,7 +990,7 @@ textarea {
 .task__title {
   color: #FD566F;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 700;
   margin-right: 30px;
 }
 
@@ -995,7 +1003,7 @@ textarea {
 .task__time {
   color: #9C9C9C;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* Progress
@@ -1325,9 +1333,12 @@ ul {
 
 .wrap {
   position: relative;
+  z-index: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -1335,10 +1346,10 @@ ul {
       -ms-flex-align: start;
           align-items: flex-start;
   max-width: 1366px;
+  width: 100%;
   background-color: #EAEAEA;
   margin: 0 auto;
-  overflow: hidden;
-  min-height: 100vh;
+  padding-bottom: 0px;
   font-family: 'Lato', sans-serif;
 }
 
@@ -1383,16 +1394,6 @@ ul {
   padding: 30px;
 }
 
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-  margin-left: 70px;
-}
-
 @media (max-width: 1365px) {
   .main {
     width: 100%;
@@ -1405,7 +1406,7 @@ ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .main__inner {
+  .main__div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
